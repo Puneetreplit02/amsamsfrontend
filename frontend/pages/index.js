@@ -64,14 +64,14 @@ export default function Home() {
                   Experience the highest quality meat sourced directly from trusted farms. 
                   Delivered to your doorstep, fresh and ready to cook.
                 </p>
-                <div className="mt-8 sm:mt-10 sm:flex sm:justify-center lg:justify-start">
-                  <div className="rounded-md shadow">
-                    <Link href="/products" className="btn btn-primary btn-lg">
+                <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row sm:justify-center lg:justify-start">
+                  <div className="rounded-md shadow w-full sm:w-auto">
+                    <Link href="/products" className="w-full sm:w-auto btn btn-primary btn-lg flex items-center justify-center">
                       Shop Now
                     </Link>
                   </div>
-                  <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <Link href="/about" className="btn btn-outline btn-lg">
+                  <div className="mt-3 sm:mt-0 sm:ml-3 w-full sm:w-auto">
+                    <Link href="/about" className="w-full sm:w-auto btn btn-outline btn-lg flex items-center justify-center">
                       Learn More
                     </Link>
                   </div>
@@ -175,7 +175,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10 text-center">
-            <Link href="/products" className="btn btn-primary">
+            <Link href="/products" className="w-full sm:w-auto inline-flex justify-center btn btn-primary px-6 py-3">
               View All Products
             </Link>
           </div>
@@ -210,11 +210,11 @@ export default function Home() {
                     </div>
                     <span className="text-lg font-bold text-meat-600">₹{product.price}</span>
                   </div>
-                  <div className="mt-4 flex justify-between items-center">
-                    <Link href={`/products/${product.id}`} className="text-primary-600 hover:text-primary-800 font-medium text-sm">
+                  <div className="mt-4 flex flex-col sm:flex-row justify-between items-center gap-2">
+                    <Link href={`/products/${product.id}`} className="text-primary-600 hover:text-primary-800 font-medium text-sm w-full sm:w-auto text-center sm:text-left">
                       View Details
                     </Link>
-                    <button className="btn btn-sm btn-primary">
+                    <button className="btn btn-sm btn-primary w-full sm:w-auto">
                       Add to Cart
                     </button>
                   </div>

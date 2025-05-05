@@ -56,24 +56,18 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/products?category=chicken">
-                    <a className="text-base text-gray-400 hover:text-gray-300">
-                      Chicken
-                    </a>
+                  <Link href="/products?category=chicken" className="text-base text-gray-400 hover:text-gray-300">
+                    Chicken
                   </Link>
                 </li>
                 <li>
-                  <Link href="/products?category=mutton">
-                    <a className="text-base text-gray-400 hover:text-gray-300">
-                      Mutton
-                    </a>
+                  <Link href="/products?category=mutton" className="text-base text-gray-400 hover:text-gray-300">
+                    Mutton
                   </Link>
                 </li>
                 <li>
-                  <Link href="/products?category=seafood">
-                    <a className="text-base text-gray-400 hover:text-gray-300">
-                      Seafood
-                    </a>
+                  <Link href="/products?category=seafood" className="text-base text-gray-400 hover:text-gray-300">
+                    Seafood
                   </Link>
                 </li>
               </ul>
@@ -85,31 +79,23 @@ const Footer = () => {
               </h3>
               <ul className="mt-4 space-y-4">
                 <li>
-                  <Link href="/about">
-                    <a className="text-base text-gray-400 hover:text-gray-300">
-                      About Us
-                    </a>
+                  <Link href="/about" className="text-base text-gray-400 hover:text-gray-300">
+                    About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog">
-                    <a className="text-base text-gray-400 hover:text-gray-300">
-                      Blog
-                    </a>
+                  <Link href="/blog" className="text-base text-gray-400 hover:text-gray-300">
+                    Blog
                   </Link>
                 </li>
                 <li>
-                  <Link href="/careers">
-                    <a className="text-base text-gray-400 hover:text-gray-300">
-                      Careers
-                    </a>
+                  <Link href="/careers" className="text-base text-gray-400 hover:text-gray-300">
+                    Careers
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact">
-                    <a className="text-base text-gray-400 hover:text-gray-300">
-                      Contact
-                    </a>
+                  <Link href="/contact" className="text-base text-gray-400 hover:text-gray-300">
+                    Contact
                   </Link>
                 </li>
               </ul>
@@ -121,31 +107,23 @@ const Footer = () => {
               </h3>
               <ul className="mt-4 space-y-4">
                 <li>
-                  <Link href="/faq">
-                    <a className="text-base text-gray-400 hover:text-gray-300">
-                      FAQ
-                    </a>
+                  <Link href="/faq" className="text-base text-gray-400 hover:text-gray-300">
+                    FAQ
                   </Link>
                 </li>
                 <li>
-                  <Link href="/shipping">
-                    <a className="text-base text-gray-400 hover:text-gray-300">
-                      Shipping
-                    </a>
+                  <Link href="/shipping" className="text-base text-gray-400 hover:text-gray-300">
+                    Shipping
                   </Link>
                 </li>
                 <li>
-                  <Link href="/terms">
-                    <a className="text-base text-gray-400 hover:text-gray-300">
-                      Terms & Conditions
-                    </a>
+                  <Link href="/terms" className="text-base text-gray-400 hover:text-gray-300">
+                    Terms & Conditions
                   </Link>
                 </li>
                 <li>
-                  <Link href="/privacy">
-                    <a className="text-base text-gray-400 hover:text-gray-300">
-                      Privacy Policy
-                    </a>
+                  <Link href="/privacy" className="text-base text-gray-400 hover:text-gray-300">
+                    Privacy Policy
                   </Link>
                 </li>
               </ul>
@@ -161,20 +139,14 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Aamis Fresh Meat. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6">
-            <Link href="/terms">
-              <a className="text-gray-400 text-sm hover:text-gray-300">
-                Terms
-              </a>
+            <Link href="/terms" className="text-gray-400 text-sm hover:text-gray-300">
+              Terms
             </Link>
-            <Link href="/privacy">
-              <a className="text-gray-400 text-sm hover:text-gray-300">
-                Privacy
-              </a>
+            <Link href="/privacy" className="text-gray-400 text-sm hover:text-gray-300">
+              Privacy
             </Link>
-            <Link href="/sitemap">
-              <a className="text-gray-400 text-sm hover:text-gray-300">
-                Sitemap
-              </a>
+            <Link href="/sitemap" className="text-gray-400 text-sm hover:text-gray-300">
+              Sitemap
             </Link>
           </div>
         </div>
