@@ -66,17 +66,13 @@ export default function Home() {
                 </p>
                 <div className="mt-8 sm:mt-10 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
-                    <Link href="/products">
-                      <a className="btn btn-primary btn-lg">
-                        Shop Now
-                      </a>
+                    <Link href="/products" className="btn btn-primary btn-lg">
+                      Shop Now
                     </Link>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <Link href="/about">
-                      <a className="btn btn-outline btn-lg">
-                        Learn More
-                      </a>
+                    <Link href="/about" className="btn btn-outline btn-lg">
+                      Learn More
                     </Link>
                   </div>
                 </div>
@@ -162,29 +158,25 @@ export default function Home() {
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {categories.map((category) => (
-              <Link href={`/products?category=${category.id}`} key={category.id}>
-                <a className="group">
-                  <div className="relative rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
-                    <div className="h-64 bg-gray-200 group-hover:opacity-90 transition-opacity duration-300">
-                      {/* Replace with actual category image */}
-                      <div className="w-full h-full bg-gradient-to-br from-primary-800 to-primary-600 flex items-center justify-center">
-                        <p className="text-xl text-white font-semibold">[{category.name} Image]</p>
-                      </div>
-                    </div>
-                    <div className="absolute inset-0 flex items-end p-4 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent">
-                      <h3 className="text-xl font-bold text-white">{category.name}</h3>
+              <Link href={`/products?category=${category.id}`} key={category.id} className="group">
+                <div className="relative rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+                  <div className="h-64 bg-gray-200 group-hover:opacity-90 transition-opacity duration-300">
+                    {/* Category image */}
+                    <div className="w-full h-full bg-gradient-to-br from-meat-800 to-meat-600 flex items-center justify-center">
+                      <p className="text-xl text-white font-semibold">{category.name}</p>
                     </div>
                   </div>
-                </a>
+                  <div className="absolute inset-0 flex items-end p-4 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent">
+                    <h3 className="text-xl font-bold text-white">{category.name}</h3>
+                  </div>
+                </div>
               </Link>
             ))}
           </div>
 
           <div className="mt-10 text-center">
-            <Link href="/products">
-              <a className="btn btn-primary">
-                View All Products
-              </a>
+            <Link href="/products" className="btn btn-primary">
+              View All Products
             </Link>
           </div>
         </div>
@@ -219,10 +211,8 @@ export default function Home() {
                     <span className="text-lg font-bold text-meat-600">₹{product.price}</span>
                   </div>
                   <div className="mt-4 flex justify-between items-center">
-                    <Link href={`/products/${product.id}`}>
-                      <a className="text-primary-600 hover:text-primary-800 font-medium text-sm">
-                        View Details
-                      </a>
+                    <Link href={`/products/${product.id}`} className="text-primary-600 hover:text-primary-800 font-medium text-sm">
+                      View Details
                     </Link>
                     <button className="btn btn-sm btn-primary">
                       Add to Cart
@@ -283,17 +273,13 @@ export default function Home() {
             </h2>
             <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
               <div className="inline-flex rounded-md shadow">
-                <Link href="/products">
-                  <a className="btn btn-primary btn-lg">
-                    Get Started
-                  </a>
+                <Link href="/products" className="btn btn-primary btn-lg">
+                  Get Started
                 </Link>
               </div>
               <div className="ml-3 inline-flex rounded-md shadow">
-                <Link href="/contact">
-                  <a className="btn btn-outline btn-lg">
-                    Learn More
-                  </a>
+                <Link href="/contact" className="btn btn-outline btn-lg">
+                  Learn More
                 </Link>
               </div>
             </div>

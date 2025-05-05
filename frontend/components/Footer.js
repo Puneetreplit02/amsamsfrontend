@@ -13,10 +13,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand column */}
           <div className="md:col-span-1">
-            <Link href="/">
-              <a className="text-2xl font-display font-bold text-white hover:text-gray-200">
-                Aamis
-              </a>
+            <Link href="/" className="text-2xl font-display font-bold text-white hover:text-gray-200">
+              Aamis
             </Link>
             <p className="mt-4 text-gray-400 text-sm">
               Premium fresh meat delivered to your doorstep. <br />
@@ -53,10 +51,8 @@ const Footer = () => {
               </h3>
               <ul className="mt-4 space-y-4">
                 <li>
-                  <Link href="/products">
-                    <a className="text-base text-gray-400 hover:text-gray-300">
-                      All Products
-                    </a>
+                  <Link href="/products" className="text-base text-gray-400 hover:text-gray-300">
+                    All Products
                   </Link>
                 </li>
                 <li>
